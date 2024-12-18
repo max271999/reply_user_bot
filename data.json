@@ -1,4 +1,8 @@
 {
-    "salom":"Rasululloh Sallollohu alayhi vasallam bizga salom berishni o'rgatganlar va yaxshiroq salomlashishimizni buyurgan.",
-    "malumot":"Assalomu aleykum! 111111111111111"
+    "auto_reply":{
+        "salom":"Rasululloh Sallollohu alayhi vasallam bizga salom berishni o'rgatganlar va yaxshiroq salomlashishimizni buyurgan.",
+        "malumot":"Assalomu aleykum! 111111111111111"
+
+    },
+    "auto_del":["ok"]
 }

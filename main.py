@@ -23,8 +23,10 @@ async def main():
         if sender.id != (await client.get_me()).id:
             with open("data.json","r")as f:
                 data = json.load(f)
-            if incoming_message.lower() in data.keys() :  # "salom" so'zini tekshirish
+            if incoming_message.lower() in data["auto_reply"].keys() :  # "salom" so'zini tekshirish
                 await event.reply(data[incoming_message.lower()])
+            if incoming_message.lower() in data["auto_del"]:
+                await event.message.delete()
 
     await client.run_until_disconnected()
 
