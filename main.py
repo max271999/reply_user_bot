@@ -24,7 +24,7 @@ async def main():
             with open("data.json","r")as f:
                 data = json.load(f)
             if incoming_message.lower() in data["auto_reply"].keys() :  # "salom" so'zini tekshirish
-                await event.reply(data[incoming_message.lower()])
+                await event.reply(data["auto_reply"][incoming_message.lower()])
             if incoming_message.lower() in data["auto_del"]:
                 await event.message.delete()
 
